@@ -1,9 +1,10 @@
 html,
+
 body {
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,3 +15,10 @@ a {
 * {
   box-sizing: border-box;
 }
+.btn {
+  @apply  py-2 px-8  border-opacity-0 transition duration-300 hover:text-pumpkin;
+}
+.btn-white {
+  @apply bg-black dark:bg-gallery-50 text-pumpkin    text-opacity-80 ;
+}
+
