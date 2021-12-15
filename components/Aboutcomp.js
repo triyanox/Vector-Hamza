@@ -13,7 +13,7 @@ const Aboutcomp = () => {
 
             <div className="container flex flex-col items-center justify-center mx-auto">
                 <motion.div whileInView={{ scale: 0.9 }} transition={{ duration: .7 }} className="flex flex-1 content-center">
-                    <Image className=" mb-6 w-20 h-20 items-center rounded-md shadow-xl  mx-auto " src={Sun} alt="" width="297.75" height="372" priority />
+                    <Image className=" mb-6 w-20 h-20 items-center rounded-lg shadow-3xl  mx-auto " src={Sun} alt="" width="297.75" height="372" priority />
                 </motion.div>
 
 
