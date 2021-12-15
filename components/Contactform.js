@@ -48,24 +48,24 @@ const Contactform = () => {
 
 
 
-                            <span className="uppercase text-center mx-auto text-black dark:text-bright-gray-50 underline decoration-pumpkin ">Full Name</span>
-                            <input name="cname" type="text" className="w-full text-3xl h-12  text-black  mt-2 p-2 focus:outline-none focus:shadow-outline rounded-3xl border-2 border-pumpkin"
+                            <span className="uppercase text-center mx-auto text-black dark:text-bright-gray-50  ">Full Name</span>
+                            <input name="cname" type="text" className="w-full text-3xl h-12  text-black  mt-2 p-2 focus:outline-none focus:shadow-outline rounded-3xl border-1 border-pumpkin"
                                 required />
 
 
 
 
-                            <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50 underline decoration-pumpkin ">Email</span>
-                            <input name="cemail" type="email" className="w-full text-3xl   h-12 text-black  mt-2 p-2  focus:outline-none focus:shadow-outline rounded-3xl border-2 border-pumpkin"
+                            <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50  ">Email</span>
+                            <input name="cemail" type="email" className="w-full text-3xl   h-12 text-black  mt-2 p-2  focus:outline-none focus:shadow-outline rounded-3xl border-1 border-pumpkin"
                                 required />
 
 
 
 
 
-                            <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50  underline decoration-pumpkin ">Message</span>
+                            <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50   ">Message</span>
                             <textarea name="cmessage"
-                                className="w-full text-3xl h-28   text-black  mt-2 p-2  focus:outline-none focus:shadow-outline rounded-3xl  border-2 border-pumpkin" required></textarea>
+                                className="w-full text-3xl h-28   text-black  mt-2 p-2  focus:outline-none focus:shadow-outline rounded-3xl  border-1 border-pumpkin" required></textarea>
 
 
 
