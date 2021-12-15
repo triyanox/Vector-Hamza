@@ -19,6 +19,6 @@ a {
   @apply  py-2 px-8  border-opacity-0 transition duration-300 hover:text-pumpkin;
 }
 .btn-white {
-  @apply bg-black dark:bg-gallery-50 text-pumpkin    text-opacity-80 ;
+  @apply bg-black dark:bg-gallery-50 text-white dark:text-black   text-opacity-80 ;
 }
 
