@@ -21,7 +21,7 @@ const Gallery = () => {
     return (
         <div className="container pt-10 mx-auto px-8">
             <section className="relative pt-10 ">
-                <div className="container  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-col-4 xl:grid-cols-4  gap-4 pb-4 sm:place-items-center">
+                <div className="container  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-col-4 xl:grid-cols-4  gap-4 pb-4 sm:place-items-center ">
                     <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="   z-10 mb-10 lg:mb-0 ">
                         <Link href='https://www.instagram.com/p/CW6YAkXsefe/' passHref >
 
@@ -44,7 +44,7 @@ const Gallery = () => {
                             <Image className="rounded-3xl" src={Saturn} alt="Art" height={500} width={500} />
                         </Link>
                     </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0 shdow-lg dark:shadow-white">
+                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0 ">
                         <Link href='https://www.instagram.com/p/CRAC8IfAntn/' passHref >
                             <Image className="rounded-3xl" src={Angelina} alt="Art" height={500} width={500} />
                         </Link>
