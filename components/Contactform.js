@@ -49,14 +49,14 @@ const Contactform = () => {
 
 
                             <span className="uppercase text-center mx-auto text-black dark:text-bright-gray-50  ">Full Name</span>
-                            <input name="cname" type="text" className="w-full text-3xl h-12  text-white dark:text-bright-gray-50 mt-2 p-2 focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded  "
+                            <input name="cname" type="text" className="w-full text-3xl h-12  text-white dark:text-black mt-2 p-2 focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded  "
                                 required />
 
 
 
 
                             <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50  ">Email</span>
-                            <input name="cemail" type="email" className="w-full text-3xl   h-12 text-white dark:text-bright-gray-50  mt-2 p-2  focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded "
+                            <input name="cemail" type="email" className="w-full text-3xl   h-12 text-white dark:text-black mt-2 p-2  focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded "
                                 required />
 
 
@@ -65,7 +65,7 @@ const Contactform = () => {
 
                             <span className="mt-8 uppercase text-center mx-auto  text-black dark:text-bright-gray-50   ">Message</span>
                             <textarea name="cmessage"
-                                className="w-full text-3xl h-28   text-white dark:text-bright-gray-50  mt-2 p-2  focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded " required></textarea>
+                                className="w-full text-3xl h-28   text-white dark:text-black  mt-2 p-2  focus:outline-none focus:shadow-outline bg-black dark:bg-white shadow-xl rounded " required></textarea>
 
 
 
