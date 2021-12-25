@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <section className='p-2 mt-0 fixed w-full z-20 top-0 '>
-            <nav className='  flex items-center flex-wrap px-12  shadow-xl rounded-3xl h-12 bg-gallery-50 dark:bg-ebony-clay-600	'>
+            <nav className='  flex items-center flex-wrap px-12  shadow-xl rounded-3xl h-12 bg-gallery-50 dark:bg-ebony-clay-600 	'>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4  '>
 
