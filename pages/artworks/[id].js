@@ -90,12 +90,12 @@ export default ({ artwork }) => (
             >
               <motion.div
                 variants={fadeInUp}
-                className="text-lg text-pumpkin font-bold mb-4"
+                className="text-lg underline decoration-pumpkin font-bold  mb-4"
               >
                 <span>{`Collection Of : ${artwork.Category}`}</span>
               </motion.div>
               <motion.h1
-                className="text-lg underline decoration-pumpkin mb-2"
+                className="text-lg text-pumpkin font-bold  mb-4"
                 variants={fadeInUp}
               >{`Name of The Artwork : ${artwork.name}`}</motion.h1>
               <motion.p
