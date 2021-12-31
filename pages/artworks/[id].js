@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import { ThemeProvider } from "../../components/Themes";
 import Background from "../../components/Background";
 import Button from "../../components/Button.js";
+import Link from "next/link";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
