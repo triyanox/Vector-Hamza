@@ -75,7 +75,7 @@ export default ({ artwork }) => (
                 transition={{ delay: 0.2 }}
               >
                 <Image
-                  className="rounded-3xl mx-auto"
+                  className="rounded-3xl px-auto"
                   src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
                   alt={artwork.details}
                   width={400}
