@@ -55,6 +55,7 @@ const Gallery = (props) => (
               key={artwork.id}
               href="/artworks/[id]"
               as={`/artworks/${artwork.id}`}
+              passHref
             >
               <motion.div
                 variants={fadeInUp}
