@@ -1,93 +1,88 @@
-import React from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import Angelina from "../assets/Angelina.png"
-import Anne from "../assets/Anne.png"
-import Darkwomen from "../assets/Darkwomen.png"
-import Earth from "../assets/Earth.png"
-import Foxboy from "../assets/Foxboy.png"
-import Got from "../assets/Got.png"
-import Heisenberg from "../assets/Heisenberg.png"
-import Moon from "../assets/Moon.png"
-import Mrrobot from "../assets/Mrrobot.png"
-import Raven from "../assets/Raven.png"
-import Sun from "../assets/Sun.png"
-import Saturn from "../assets/Suturn.png"
-import Link from 'next/link'
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { artworks } from "../data/artworks";
+import Angelina from "../assets/Angelina.png";
+import Anne from "../assets/Anne.png";
+import Darkwomen from "../assets/Darkwomen.png";
+import Earth from "../assets/Earth.png";
+import Foxboy from "../assets/Foxboy.png";
+import Got from "../assets/Got.png";
+import Heisenberg from "../assets/Heisenberg.png";
+import Moon from "../assets/Moon.png";
+import Mrrobot from "../assets/Mrrobot.png";
+import Raven from "../assets/Raven.png";
+import Sun from "../assets/Sun.png";
+import Saturn from "../assets/Suturn.png";
 
+let easing = [0.6, -0.05, 0.01, 0.99];
 
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+    transition: { duration: 0.6, ease: easing },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
 
-const Gallery = () => {
-    return (
-        <div className="container pt-10 mx-auto px-8">
-            <section className="relative pt-10 ">
-                <div className="container  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-col-4 xl:grid-cols-4  gap-4 pb-4 sm:place-items-center ">
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="   z-10 mb-10 lg:mb-0 ">
-                        <Link href='https://www.instagram.com/p/CW6YAkXsefe/' passHref >
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
-                            <Image className="rounded-3xl" src={Earth} alt="Art" height={500} width={500} />
+const Gallery = (props) => (
+  <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+    <div className="container pt-10 mx-auto px-8">
+      <section className="relative pt-10 ">
+        <motion.div
+          variants={stagger}
+          className="container  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-col-4 xl:grid-cols-4  gap-4 pb-4 sm:place-items-center"
+        >
+          {artworks.map((artwork) => (
+            <Link
+              key={artwork.id}
+              href="/artworks/[id]"
+              as={`/artworks/${artwork.id}`}
+            >
+              <motion.div
+                variants={fadeInUp}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="z-10 mb-10 lg:mb-0"
+              >
+                <motion.div
+                  initial={{ x: 60, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Image
+                    className="rounded-3xl"
+                    src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
+                    alt={artwork.details}
+                    width={500}
+                    height={500}
+                    priority
+                  />
+                </motion.div>
+              </motion.div>
+            </Link>
+          ))}
+        </motion.div>
+      </section>
+    </div>
+  </motion.div>
+);
 
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CW9ECnusl0Z/' passHref >
-                            <Image className="rounded-3xl" src={Moon} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CW33EXdMqA4/' passHref >
-                            <Image className="rounded-3xl" src={Sun} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CXHXHC5smwo/' passHref >
-                            <Image className="rounded-3xl" src={Saturn} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0 ">
-                        <Link href='https://www.instagram.com/p/CRAC8IfAntn/' passHref >
-                            <Image className="rounded-3xl" src={Angelina} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CScTzZKsfw2/' passHref >
-                            <Image className="rounded-3xl" src={Darkwomen} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CQrXsGAAfxs/' passHref >
-                            <Image className="rounded-3xl" src={Mrrobot} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CSSWcdUMAPy/' passHref >
-                            <Image className="rounded-3xl" src={Got} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CRm1UKyANi8/' passHref >
-                            <Image className="rounded-3xl" src={Anne} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CXUFG-mFOVh/' passHref >
-                            <Image className="rounded-3xl" src={Raven} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CXO_pv5scRb/' passHref >
-                            <Image className="rounded-3xl" src={Foxboy} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-                    <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} whileTap={{ scale: .9 }} className="  z-10 mb-10 lg:mb-0">
-                        <Link href='https://www.instagram.com/p/CRJzwERACSV/' passHref >
-                            <Image className="rounded-3xl" src={Heisenberg} alt="Art" height={500} width={500} />
-                        </Link>
-                    </motion.div>
-
-                </div>
-            </section >
-        </div >
-    )
-}
 export default Gallery;
