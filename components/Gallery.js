@@ -56,14 +56,16 @@ const Gallery = (props) => (
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
-                  <Image
-                    className="rounded-3xl"
-                    src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
-                    alt={artwork.details}
-                    width={500}
-                    height={500}
-                    priority
-                  />
+                  <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }}>
+                    <Image
+                      className="rounded-3xl"
+                      src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
+                      alt={artwork.details}
+                      width={500}
+                      height={500}
+                      priority
+                    />
+                  </motion.div>
                 </motion.div>
               </motion.div>
             </Link>
