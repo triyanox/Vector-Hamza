@@ -3,18 +3,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { artworks } from "../data/artworks";
-import Angelina from "../assets/Angelina.png";
-import Anne from "../assets/Anne.png";
-import Darkwomen from "../assets/Darkwomen.png";
-import Earth from "../assets/Earth.png";
-import Foxboy from "../assets/Foxboy.png";
-import Got from "../assets/Got.png";
-import Heisenberg from "../assets/Heisenberg.png";
-import Moon from "../assets/Moon.png";
-import Mrrobot from "../assets/Mrrobot.png";
-import Raven from "../assets/Raven.png";
-import Sun from "../assets/Sun.png";
-import Saturn from "../assets/Suturn.png";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 

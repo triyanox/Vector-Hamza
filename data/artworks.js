@@ -1,87 +1,114 @@
-export const artworks =
-[
-    {
-        "id": "Angelina",
-        "name": "Angelina",
-        "details": "Angelina Joli Artwork from Movies Collection",
-        "Category": "Movies",
-        "image": "../assets/Angelina.png"
-    },
-    {
-        "id": "Anne",
-        "name": "Anne with an E",
-        "details": "Anne with an E Artwork from Movies Collection",
-        "Category": "Movies",
-        "image": "../assets/Anne.png"
-    },
-    {
-        "id": "Darkwomen",
-        "name": "Darkwomen ",
-        "details": "Darkwomen Artwork from Movies Collection",
-        "Category": "Movies",
-        "image": "../assets/Darkwomen.png"
-    },
-    {
-        "id": "Earth",
-        "name": "Earth ",
-        "details": "Earth Artwork from Planets collection",
-        "Category": "Planets",
-        "image": "../assets/Earth.png"
-    },
-    {
-        "id": "Foxboy",
-        "name": "Foxboy ",
-        "details": "Foxboy Artwork from Animals collection",
-        "Category": "Animals",
-        "image": "../assets/Foxboy.png"
-    },
-    {
-        "id": "GOT",
-        "name": "GOT ",
-        "details": "GOT Artwork from Movies collection",
-        "Category": "Movies",
-        "image": "../assets/Got.png"
-    },
-    {
-        "id": "Heisenberg",
-        "name": "Heisenberg ",
-        "details": "Heisenberg Artwork from Movies collection",
-        "Category": "Movies",
-        "image": "../assets/Heisenberg.png"
-    },
-    {
-        "id": "Moon",
-        "name": "Moon ",
-        "details": "Moon Artwork from Planets collection",
-        "Category": "Planets",
-        "image": "../assets/Moon.png"
-    },
-    {
-        "id": "Mrrobot",
-        "name": "Mrrobot ",
-        "details": "Mr Robot Artwork from Movies collection",
-        "Category": "Movies",
-        "image": "../assets/Mrrobot.png"
-    },
-    {
-        "id": "Raven",
-        "name": "Raven ",
-        "details": "Raven Artwork from Movies collection",
-        "Category": "Movies",
-        "image": "../assets/Raven.png"
-    },
-    {
-        "id": "Sun",
-        "name": "Sun ",
-        "details": "Sun Artwork from Planets collection",
-        "Category": "Planets",
-        "image": "../assets/Sun.png"
-    },
-    {
-        "id": "Suturn",
-        "name": "Suturn ",
-        "details": "Suturn Artwork from Planets collection",
-        "Category": "Planets",
-        "image": "../assets/Suturn.png"
-    },
-]
+export const artworks = [
+  {
+    id: "Raven",
+    name: "Raven ",
+    details: "Raven Artwork from Animals collection",
+    Category: "Animals",
+    image: "https://www.instagram.com/p/CXUFG-mFOVh/",
+  },
+  {
+    id: "Bunny",
+    name: "Bunny ",
+    details: "Bunny Artwork from Animals collection",
+    Category: "Animals",
+    image: "https://www.instagram.com/p/CXY677JMdcA/",
+  },
+  {
+    id: "Foxboy",
+    name: "Foxboy ",
+    details: "Foxboy Artwork from Animals collection",
+    Category: "Animals",
+    image: "https://www.instagram.com/p/CXO_pv5scRb/",
+  },
+  {
+    id: "Antilope",
+    name: "Antilope ",
+    details: "Antilope Artwork from Animals collection",
+    Category: "Animals",
+    image: "https://www.instagram.com/p/CXeGPOmsFnk/",
+  },
+  {
+    id: "Lion",
+    name: "Lion ",
+    details: "Lion Artwork from Animals collection",
+    Category: "Animals",
+    image: "https://www.instagram.com/p/CXg52-DsRLc/",
+  },
+  {
+    id: "Earth",
+    name: "Earth ",
+    details: "Earth Artwork from Planets collection",
+    Category: "Planets",
+    image: "https://www.instagram.com/p/CW6YAkXsefe/",
+  },
+  {
+    id: "Moon",
+    name: "Moon ",
+    details: "Moon Artwork from Planets collection",
+    Category: "Planets",
+    image: "https://www.instagram.com/p/CW9ECnusl0Z/",
+  },
+  {
+    id: "Sun",
+    name: "Sun ",
+    details: "Sun Artwork from Planets collection",
+    Category: "Planets",
+    image: "https://www.instagram.com/p/CW33EXdMqA4/",
+  },
+  {
+    id: "Suturn",
+    name: "Suturn ",
+    details: "Suturn Artwork from Planets collection",
+    Category: "Planets",
+    image: "https://www.instagram.com/p/CXHXHC5smwo/",
+  },
+  {
+    id: "Mars",
+    name: "Mars ",
+    details: "Mars Artwork from Planets collection",
+    Category: "Planets",
+    image: "https://www.instagram.com/p/CXBxzIJsqUk/",
+  },
+  {
+    id: "GOT",
+    name: "GOT ",
+    details: "GOT Artwork from Movies collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CSSWcdUMAPy/",
+  },
+  {
+    id: "Heisenberg",
+    name: "Heisenberg ",
+    details: "Heisenberg Artwork from Movies collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CRJzwERACSV/",
+  },
+  {
+    id: "Angelina",
+    name: "Angelina",
+    details: "Angelina Joli Artwork from Movies Collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CRAC8IfAntn/",
+  },
+  {
+    id: "Anne",
+    name: "Anne with an E",
+    details: "Anne with an E Artwork from Movies Collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CRm1UKyANi8/",
+  },
+  {
+    id: "Darkwomen",
+    name: "Darkwomen ",
+    details: "Darkwomen Artwork from Movies Collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CScTzZKsfw2/",
+  },
+  {
+    id: "Mrrobot",
+    name: "Mrrobot ",
+    details: "Mr Robot Artwork from Movies collection",
+    Category: "Movies",
+    image: "https://www.instagram.com/p/CQrXsGAAfxs/",
+  },
+];
