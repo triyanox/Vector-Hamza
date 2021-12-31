@@ -99,6 +99,7 @@ export default ({ artwork }) => (
                 variants={fadeInUp}
               >{`Name of The Artwork : ${artwork.name}`}</motion.h1>
               <motion.p
+                className="text-center px-auto"
                 variants={fadeInUp}
               >{`This Artwork is made by Hamza Kbida and it's a ${artwork.details}`}</motion.p>
 
@@ -106,7 +107,11 @@ export default ({ artwork }) => (
                 className="mt-4 mb-4 justify-center content-center"
                 variants={fadeInUp}
               >
-                <Link key={artwork.id} href={`${artwork.Image}`} passHref>
+                <Link
+                  key={artwork.id}
+                  href={`https://www.instagram.com/p/${artwork.image}`}
+                  passHref
+                >
                   <button className="flex mt-8 btn btn-white  mx-auto shadow-xl rounded-md justify-center items-center">
                     <h1>View On Instagram</h1>
 
