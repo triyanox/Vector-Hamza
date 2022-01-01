@@ -7,7 +7,7 @@ import UIfx from "uifx";
 import whoosh from "../audio/whoosh.mp3";
 let easing = [0.6, -0.05, 0.01, 0.99];
 
-const beep = new UIfx({ asset: whoosh });
+const beep = new UIfx(whoosh);
 
 const fadeInUp = {
   initial: {

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import UIFx from "uifx";
+import UIfx from "uifx";
 import success from "../audio/success.mp3";
-const beep = new UIFx({ asset: success });
+
+const beep = new UIfx(success);
+
 const Contactform = () => {
   return (
     <section className=" py-20 pt-20 ">

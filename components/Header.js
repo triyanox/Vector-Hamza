@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import UIfx from "uifx";
 import whoosh from "../audio/whoosh.mp3";
-const beep = new UIfx({ asset: whoosh });
+const beep = new UIfx(whoosh);
 
 const Header = () => {
   const [active, setActive] = useState(false);
