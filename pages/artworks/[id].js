@@ -64,7 +64,7 @@ export default ({ artwork }) => (
         <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
           <div className="container flex flex-col items-center justify-center mx-auto mt-36">
             <motion.div
-              className=" flex flex-1 content-center"
+              className="content-center"
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
             >
@@ -73,13 +73,13 @@ export default ({ artwork }) => (
                 initial={{ x: 200, opacity: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
-                className="items-center rounded-lg shadow-3xl  mx-auto"
+                className="items-center rounded-lg shadow-3xl   mx-auto"
               >
                 <Image
                   src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
                   alt={artwork.details}
-                  width={400}
-                  height={400}
+                  width={250}
+                  height={250}
                 />
               </motion.div>
             </motion.div>
