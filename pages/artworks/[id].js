@@ -73,9 +73,9 @@ export default ({ artwork }) => (
                 initial={{ x: 200, opacity: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
+                className="items-center rounded-lg shadow-3xl  mx-auto"
               >
                 <Image
-                  className="rounded-3xl px-auto"
                   src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
                   alt={artwork.details}
                   width={400}
