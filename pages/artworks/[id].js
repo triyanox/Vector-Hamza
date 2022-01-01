@@ -85,7 +85,7 @@ export default ({ artwork }) => (
             </motion.div>
 
             <motion.div
-              className="flex  flex-col items-center mx-auto container px-5 py-12 text-black dark:text-bright-gray-500"
+              className="flex  flex-col items-center mx-auto container px-5 py-12 text-black dark:text-bright-gray-50"
               variants={stagger}
             >
               <motion.div

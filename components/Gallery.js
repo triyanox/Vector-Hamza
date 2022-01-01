@@ -61,8 +61,8 @@ const Gallery = (props) => (
                       className="rounded-3xl"
                       src={`https://artworksbyhamza.netlify.app/${artwork.id}.png`}
                       alt={artwork.details}
-                      width={500}
-                      height={500}
+                      width={450}
+                      height={450}
                       priority
                     />
                   </motion.div>
