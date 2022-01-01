@@ -3,8 +3,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { artworks } from "../data/artworks";
-
+import UIfx from "uifx";
+import whoosh from "../audio/whoosh.mp3";
 let easing = [0.6, -0.05, 0.01, 0.99];
+
+const beep = new UIfx({ asset: whoosh });
 
 const fadeInUp = {
   initial: {
@@ -40,6 +43,7 @@ const Gallery = (props) => (
         >
           {artworks.map((artwork) => (
             <Link
+              onClick={beep.play}
               key={artwork.id}
               href="/artworks/[id]"
               as={`/artworks/${artwork.id}`}
